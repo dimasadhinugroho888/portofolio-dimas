@@ -116,22 +116,23 @@
       <p>📱 +62 851-7995-6922</p>
       <p>🔗 <a href="https://www.linkedin.com/in/dimas-adhi-nugroho-2028631a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></p>
 
-      <form class="mt-4">
-        <div class="mb-3">
-          <label for="name" class="form-label">Nama</label>
-          <input type="text" class="form-control" id="name" required />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Pesan</label>
-          <textarea class="form-control" id="message" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-      </form>
-    </section>
+      <form action="https://formsubmit.co/dimasnugroho763@gmail.com" method="POST" class="mt-4">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="name" name="name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Pesan</label>
+        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+      </div>
+      <input type="hidden" name="_captcha" value="false" />
+      <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+    </form>
+  </section>
 
     <!-- Footer -->
     <footer>&copy; 2025 Dimas Adhi Nugroho. All rights reserved.</footer>
