@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimas Adhi Nugroho - IT Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .hero {
+        background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+      .section-title {
+        font-weight: bold;
+        border-bottom: 2px solid #0d6efd;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 14px;
+      }
+      .dark-mode {
+        background-color: #121212 !important;
+        color: white !important;
+      }
+      .dark-mode .card,
+      .dark-mode .form-control {
+        background-color: #1e1e1e !important;
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Dark Mode Switch -->
+    <div class="text-end p-3">
+      <button class="btn btn-outline-primary" onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <img src="avatar.png" alt="Foto Profil" class="profile-img" />
+      <h1>Dimas Adhi Nugroho</h1>
+      <p class="lead">IT Support | Troubleshooting | Jaringan | Maintenance</p>
+      <a href="CV Dimas Adhi Nugroho.pdf" class="btn btn-light mt-3" download>Download CV (PDF)</a>
+    </section>
+
+    <!-- About -->
+    <section class="container py-5">
+      <h2 class="section-title">Tentang Saya</h2>
+      <p>
+        Saya adalah mahasiswa aktif S1 Informatika di Universitas Bina Sarana Informatika dengan IPK 3,89. Memiliki pengalaman magang sebagai IT Support, saya menguasai troubleshooting perangkat keras & lunak, instalasi sistem, hingga
+        pemeliharaan jaringan lokal. Diperkuat dengan sertifikasi Cisco di bidang jaringan & keamanan siber. Siap berkontribusi secara profesional dan efisien.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="container py-5">
+      <h2 class="section-title">Pengalaman</h2>
+      <ul>
+        <li>
+          <strong>IT Support Intern – PT Cipta Raya Komunika (Des 2018 – Apr 2019)</strong><br />
+          ● Perawatan hardware & instalasi software<br />
+          ● Troubleshooting jaringan dan koneksi<br />
+          ● Layanan teknis pengguna secara efisien
+        </li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="container py-5">
+      <h2 class="section-title">Keahlian</h2>
+      <div class="row">
+        <div class="col-md-4">✅ Troubleshooting Hardware & Software</div>
+        <div class="col-md-4">✅ Maintenance Sistem & Perangkat</div>
+        <div class="col-md-4">✅ Konfigurasi & Jaringan Lokal</div>
+        <div class="col-md-4">✅ Instalasi Software</div>
+        <div class="col-md-4">✅ Layanan Teknis Pengguna</div>
+        <div class="col-md-4">✅ Analisa Permasalahan IT</div>
+      </div>
+    </section>
+
+    <!-- Sertifikasi -->
+    <section class="container py-5">
+      <h2 class="section-title">Sertifikasi</h2>
+      <ul>
+        <li>CCNAv7: Introduction to Networks</li>
+        <li>Computer Hardware Basics – Cisco Networking Academy</li>
+        <li>Network Support and Security – Cisco</li>
+        <li>Introduction to Cybersecurity – Cisco</li>
+        <li>Cyber Threat Management – Cisco</li>
+        <li>Ethical Hacker – Cisco</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="container py-5">
+      <h2 class="section-title">Kontak</h2>
+      <p>📍 Bogor, Indonesia</p>
+      <p>📧 dimasnugroho763@gmail.com</p>
+      <p>📱 +62 851-7995-6922</p>
+      <p>🔗 <a href="https://www.linkedin.com/in/dimas-adhi-nugroho-2028631a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></p>
+
+      <form class="mt-4">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Pesan</label>
+          <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2025 Dimas Adhi Nugroho. All rights reserved.</footer>
+
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
