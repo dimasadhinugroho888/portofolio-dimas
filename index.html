@@ -1,161 +1,159 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dimas Adhi Nugroho - IT Support</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-      body {
-        font-family: "Segoe UI", sans-serif;
-        transition: background-color 0.3s, color 0.3s;
-      }
-      .hero {
-        background: linear-gradient(135deg, #0d6efd, #0dcaf0);
-        color: white;
-        padding: 80px 20px;
-        text-align: center;
-      }
-      .profile-img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 20px;
-      }
-      .section-title {
-        font-weight: bold;
-        border-bottom: 2px solid #0d6efd;
-        display: inline-block;
-        margin-bottom: 20px;
-      }
-      footer {
-        background-color: #f8f9fa;
-        padding: 20px 0;
-        text-align: center;
-        font-size: 14px;
-      }
-      .dark-mode {
-        background-color: #121212 !important;
-        color: white !important;
-      }
-      .dark-mode .card,
-      .dark-mode .form-control {
-        background-color: #1e1e1e !important;
-        color: white !important;
-      }
-      .dark-mode footer {
-        background-color: #c79797 !important;
-        color: white !important;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Dark Mode Switch -->
-    <div class="text-end p-3">
-      <button class="btn btn-outline-primary" onclick="toggleDarkMode()">Dark Mode</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio Dimas Adhi Nugroho - IT Support. Berisi informasi pengalaman, keahlian, sertifikasi, dan kontak.">
+  <title>Dimas Adhi Nugroho - IT Support</title>
+
+  <!-- Bootstrap & AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-weight: bold;
+      border-bottom: 2px solid #0d6efd;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    form {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .dark-mode {
+      background-color: #121212 !important;
+      color: white !important;
+    }
+    .dark-mode .card,
+    .dark-mode .form-control {
+      background-color: #1e1e1e !important;
+      color: white !important;
+    }
+    .dark-mode footer {
+      background-color: #1e1e1e !important;
+      color: white !important;
+    }
+    .dark-mode form {
+      background-color: #2c2c2c !important;
+    }
+    a:hover {
+      color: #0dcaf0;
+      transition: color 0.3s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease;
+    }
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <div class="text-end p-3">
+    <button class="btn btn-outline-primary" onclick="toggleDarkMode()">Dark Mode</button>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" data-aos="fade-down">
+    <img src="avatar.png" alt="Foto Profil" class="profile-img" />
+    <h1>Dimas Adhi Nugroho</h1>
+    <p class="lead">IT Support | Troubleshooting | Jaringan | Maintenance</p>
+    <a href="CV Dimas Adhi Nugroho.pdf" class="btn btn-light mt-3" download>Download CV (PDF)</a>
+  </section>
+
+  <!-- About -->
+  <section class="container py-5" data-aos="fade-up">
+    <h2 class="section-title">Tentang Saya</h2>
+    <p>
+      Saya adalah mahasiswa aktif S1 Informatika di Universitas Bina Sarana Informatika dengan IPK 3,89. Memiliki pengalaman magang sebagai IT Support, saya menguasai troubleshooting perangkat keras & lunak, instalasi sistem, hingga
+      pemeliharaan jaringan lokal. Diperkuat dengan sertifikasi Cisco di bidang jaringan & keamanan siber. Siap berkontribusi secara profesional dan efisien.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section class="container py-5" data-aos="fade-up">
+    <h2 class="section-title">Pengalaman</h2>
+    <ul>
+      <li>
+        <strong>IT Support Intern – PT Cipta Raya Komunika (Des 2018 – Apr 2019)</strong><br />
+        ● Perawatan hardware & instalasi software<br />
+        ● Troubleshooting jaringan dan koneksi<br />
+        ● Layanan teknis pengguna secara efisien
+      </li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section class="container py-5" data-aos="fade-right">
+    <h2 class="section-title">Keahlian</h2>
+    <div class="row">
+      <div class="col-md-4" data-aos="zoom-in">✅ Troubleshooting Hardware & Software</div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">✅ Maintenance Sistem & Perangkat</div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">✅ Konfigurasi & Jaringan Lokal</div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">✅ Instalasi Software</div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">✅ Layanan Teknis Pengguna</div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">✅ Analisa Permasalahan IT</div>
     </div>
+  </section>
 
-    <!-- Hero -->
-    <section class="hero">
-      <img src="avatar.png" alt="Foto Profil" class="profile-img" />
-      <h1>Dimas Adhi Nugroho</h1>
-      <p class="lead">IT Support | Troubleshooting | Jaringan | Maintenance</p>
-      <a href="CV Dimas Adhi Nugroho.pdf" class="btn btn-light mt-3" download>Download CV (PDF)</a>
-    </section>
+  <!-- Sertifikat -->
+  <section class="container py-5" data-aos="fade-up">
+    <h2 class="section-title">Sertifikat</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><a href="sertifikat/ccnav7-introduction-to-networks.pdf" target="_blank">CCNAv7: Introduction to Networks</a></li>
+      <li class="list-group-item"><a href="sertifikat/Computer Hardware Basics.pdf" target="_blank">Computer Hardware Basics – Cisco Networking Academy</a></li>
+      <li class="list-group-item"><a href="sertifikat/Networking Devices and Initial Configuration.pdf" target="_blank">Networking Devices and Initial Configuration – Cisco</a></li>
+      <li class="list-group-item"><a href="sertifikat/Network Addressing and Basic Troubleshooting.pdf" target="_blank">Network Addressing and Basic Troubleshooting – Cisco</a></li>
+      <li class="list-group-item"><a href="sertifikat/Network Support and Security.pdf" target="_blank">Network Support and Security – Cisco Networking Academy</a></li>
+      <li class="list-group-item"><a href="sertifikat/Introduction to Cybersecurity.pdf" target="_blank">Introduction to Cybersecurity – Cisco Networking Academy</a></li>
+      <li class="list-group-item"><a href="sertifikat/Cyber Threat Management.pdf" target="_blank">Cyber Threat Management – Cisco Networking Academy</a></li>
+      <li class="list-group-item"><a href="sertifikat/Ethical Hacker.pdf" target="_blank">Ethical Hacker – Cisco Networking Academy</a></li>
+    </ul>
+  </section>
 
-    <!-- About -->
-    <section class="container py-5">
-      <h2 class="section-title">Tentang Saya</h2>
-      <p>
-        Saya adalah mahasiswa aktif S1 Informatika di Universitas Bina Sarana Informatika dengan IPK 3,89. Memiliki pengalaman magang sebagai IT Support, saya menguasai troubleshooting perangkat keras & lunak, instalasi sistem, hingga
-        pemeliharaan jaringan lokal. Diperkuat dengan sertifikasi Cisco di bidang jaringan & keamanan siber. Siap berkontribusi secara profesional dan efisien.
-      </p>
-    </section>
-
-    <!-- Experience -->
-    <section class="container py-5">
-      <h2 class="section-title">Pengalaman</h2>
-      <ul>
-        <li>
-          <strong>IT Support Intern – PT Cipta Raya Komunika (Des 2018 – Apr 2019)</strong><br />
-          ● Perawatan hardware & instalasi software<br />
-          ● Troubleshooting jaringan dan koneksi<br />
-          ● Layanan teknis pengguna secara efisien
-        </li>
-      </ul>
-    </section>
-
-    <!-- Skills -->
-    <section class="container py-5">
-      <h2 class="section-title">Keahlian</h2>
-      <div class="row">
-        <div class="col-md-4">✅ Troubleshooting Hardware & Software</div>
-        <div class="col-md-4">✅ Maintenance Sistem & Perangkat</div>
-        <div class="col-md-4">✅ Konfigurasi & Jaringan Lokal</div>
-        <div class="col-md-4">✅ Instalasi Software</div>
-        <div class="col-md-4">✅ Layanan Teknis Pengguna</div>
-        <div class="col-md-4">✅ Analisa Permasalahan IT</div>
-      </div>
-    </section>
-
-    <!-- Sertifikasi -->
-<section class="container py-5">
-  <h2 class="section-title">Sertifikat</h2>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
-      <a href="sertifikat/ccnav7-introduction-to-networks.pdf" target="_blank">
-        CCNAv7: Introduction to Networks
-      </a>
-    </li>
-    <li class="list-group-item">
-      <a href="sertifikat/Computer Hardware Basics.pdf" target="_blank">
-        Computer Hardware Basics – Cisco Networking Academy
-      </a>
-    </li>
-    <li class="list-group-item">
-      <a href="sertifikat/Networking Devices and Initial Configuration.pdf" target="_blank">
-        Networking Devices and Initial Configuration – Cisco Networking Academy
-      </a>
-    </li>
-     <li class="list-group-item">
-      <a href="sertifikat/Network Addressing and Basic Troubleshooting.pdf" target="_blank">
-        Network Addressing and Basic Troubleshooting – Cisco Networking Academy
-      </a>
-    </li>
-    <li class="list-group-item">
-      <a href="sertifikat/Network Support and Security.pdf" target="_blank">
-        Network Support and Security – Cisco Networking Academy
-      </a>
-    </li>
-    <li class="list-group-item">
-      <a href="sertifikat/Introduction to Cybersecurity.pdf" target="_blank">
-        Introduction to Cybersecurity – Cisco Networking Academy
-      </a>
-    </li>
-    <li class="list-group-item">
-      <a href="sertifikat/Cyber Threat Management.pdf" target="_blank">
-        Cyber Threat Management – Cisco Networking Academy
-      </a>
-    </li>
-    <li class="list-group-item">
-      <a href="sertifikat/Ethical Hacker.pdf" target="_blank">
-        Ethical Hacker – Cisco Networking Academy
-      </a>
-    </li>
-  </ul>
-</section>
-
-    <!-- Contact -->
-  <section class="container py-5">
+  <!-- Contact -->
+  <section class="container py-5" data-aos="fade-up">
     <h2 class="section-title">Kontak</h2>
-    <p>📍 Bogor, Indonesia</p>
-    <p>📧 <a href="mailto:dimasnugroho763@gmail.com">dimasnugroho763@gmail.com</a></p>
-    <p>📱 <a href="https://wa.me/6285179956922" target="_blank">+62 851-7995-6922</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/dimas-adhi-nugroho-2028631a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></p>
-    <p>💻 <a href="https://github.com/dimasadhinugroho888" target="_blank">GitHub</a></p>
-      
-      <form action="https://formsubmit.co/dimasnugroho763@gmail.com" method="POST" class="mt-4">
+    <p><i class="fas fa-map-marker-alt"></i> Bogor, Indonesia</p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:dimasnugroho763@gmail.com">dimasnugroho763@gmail.com</a></p>
+    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6285179956922" target="_blank">+62 851-7995-6922</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/dimas-adhi-nugroho-2028631a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/dimasadhinugroho888" target="_blank">GitHub</a></p>
+
+    <form action="https://formsubmit.co/dimasnugroho763@gmail.com" method="POST" class="mt-4">
       <div class="mb-3">
         <label for="name" class="form-label">Nama</label>
         <input type="text" class="form-control" id="name" name="name" required />
@@ -173,13 +171,22 @@
     </form>
   </section>
 
-    <!-- Footer -->
-    <footer>&copy; 2025 Dimas Adhi Nugroho. All rights reserved.</footer>
+  <!-- Footer -->
+  <footer>&copy; 2025 Dimas Adhi Nugroho. All rights reserved.</footer>
 
-    <script>
-      function toggleDarkMode() {
-        document.body.classList.toggle("dark-mode");
-      }
-    </script>
-  </body>
+  <!-- Scroll to Top -->
+  <button onclick="scrollToTop()" class="btn btn-primary" id="scrollTopBtn">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
 </html>
